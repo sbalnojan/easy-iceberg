@@ -31,11 +31,23 @@ containers:
       - local: ./postgres/data
         container: /var/lib/postgresql/data
         options: cached
+    ports:
+      - local: 5432
+        container: 5432
     
   ## Utility tasks
+tasks:
   dev:
     description: Start a shell in the development environment.
     group: Utility tasks
+    dependencies:
+      - postgres
     run:
       container: spark-iceberg
       command: pyspark-notebook
+
+  db:
+    description: Start a shell in the development environment.
+    group: Utility tasks
+    run:
+      container: postgres

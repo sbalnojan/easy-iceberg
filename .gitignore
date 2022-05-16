@@ -5,7 +5,8 @@ __pycache__/
 
 warehouse/*
 postgres/*
-notebooks/*
+notebooks/.pynb_*
+notebooks/spark-warehouse/*
 
 # C extensions
 *.so

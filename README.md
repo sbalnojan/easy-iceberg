@@ -16,3 +16,7 @@ If you want to run this on your own machine, you can use *batect*.
 
 Simply run ```./batect dev``` and it will start the notebook server 
 for you, mounting everything into it.
+
+## References 
+This repository is based on the [one provided by tabular.io](https://github.com/tabular-io/docker-spark-iceberg)! That 
+one contains all the cool stuff that makes this fun.
